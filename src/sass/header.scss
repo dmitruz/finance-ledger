@@ -1,9 +1,16 @@
+
+.header {
+    background-color: aqua;
+}
 .container {
     width: 320px;
-    border: 2px solid black
+    border: 2px solid black;
 }
 
-.header__text {
-    font-size: 48px;
-    color: blue;
+.header__text-green {
+    color: #28a725;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1,0;
 }
