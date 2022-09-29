@@ -45,3 +45,34 @@ padding-top: 24px;
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.professional__team-list {
+    align-items: center;
+}
+.team__members-img {
+    width: 280px;
+}
+
+.img__name {
+ 
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 0,8;
+text-align: center;
+color: #333333;
+padding-top: 16px;
+}
+
+.img__position {
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 0,8;
+text-align: center;
+color: #333333;
+margin-top: 8px;
+padding-bottom: 50px;
+}
