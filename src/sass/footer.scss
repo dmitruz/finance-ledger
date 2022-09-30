@@ -1,0 +1,35 @@
+.footer__block {
+width: 320px;
+height: 109px;
+background: #333333;
+border-radius: 0px;
+align-items: center;
+
+}
+
+.footer__list {
+    display: flex;
+    margin-left: 30px;
+    padding-top: 20px;
+    
+}
+
+.footer__list-item {
+    padding-left: 20px;
+}
+.svg {
+    fill: #fff;
+}
+
+.footer__text {
+width: 256px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1,0;
+text-align: center;
+color: #FFFFFF;
+margin-left: 34px;
+margin-top: 12px;
+}

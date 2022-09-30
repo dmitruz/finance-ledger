@@ -9,7 +9,9 @@ screen and (min-resolution: 2dppx) and (min-width: 320px) {
 }
 .header {
     background-image: url(../images/showcase.jpg);
-    max-width: 320px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/showcase@2x.jpg);
+    border-radius: 0px;
+    width: 320px;
     background-size: cover;
     align-items: center;
     margin: 0 auto;
@@ -20,9 +22,12 @@ screen and (min-resolution: 2dppx) and (min-width: 320px) {
    
     margin: 0 auto;
 }
-
+.navigation {
+    display:block;
+}
 .header__nav {
     display: flex;
+    
 }
 .book {
     width: 36px;
@@ -51,6 +56,7 @@ margin-left: 8px;
 
 .header__list {
     display: flex;
+    margin-right: 100px;
 }
 
 .header__item {
@@ -130,4 +136,71 @@ color: #FFFFFF;
     left: 25px;
 }
 
+/////////---------768 PX----------////////////////////////////////////
 
+@media screen and (min-width: 768px) { 
+.header {
+    width: 768px
+}
+.container {
+    width: 768px;
+}
+.navigation {
+    display: flex;
+}
+    .header__text-green {
+    font-size:  35px;
+    margin-left: 10px;
+}
+.header__list {
+    margin-top: 16px;
+    margin-left: 70px;
+}
+.header__list-text {
+    margin-left: 20px;
+}
+.header__text {
+    font-size: 35px;
+    margin-left: 8px;
+}
+.header__list-text {
+    font-size: 18px;
+}
+.hero__text {
+    font-size: 56px;
+}
+.hero__second-text {
+    font-size: 40px;
+}
+}
+
+
+//   <!---HEADER-->
+//     <section class="header">
+//       <div class="container">
+//         <nav class="header__nav">
+//           <img class="book" src="./images/fa-solid_book-open.png" />
+//           <h2 class="header__text-green">Finance</h2>
+//           <h2 class="header__text">Ledger</h2>
+//         </nav>
+//         <ul class="header__list">
+//           <li class="header__item">
+//             <h3 class="header__list-text">Home</h3>
+
+//             <h3 class="header__list-text">Cases</h3>
+//             <h3 class="header__list-text">Blog</h3>
+//             <h3 class="header__list-text">Contact</h3>
+//           </li>
+//         </ul>
+//         <h1 class="hero__text">
+//           The Sky Is<br />
+//           The Limit
+//         </h1>
+//         <h2 class="hero__second-text">We provide world class</h2>
+//         <p class="hero__paragraph">financial assistance</p>
+//         <button class="hero__btn">
+//           <img class="next" src="./images/next.png" />
+//           <p class="btn__text">Read More</p>
+//         </button>
+//       </div>
+//     </section>
