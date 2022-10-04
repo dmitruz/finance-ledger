@@ -13,7 +13,7 @@ font-size: 16px;
 line-height: 0,7;
 text-align: center;
 color: #333333;
-margin-left: 80px;
+
 padding-top: 56px;
 }
 
@@ -59,4 +59,34 @@ margin-top: 24px;
 }
 .cases__item-last {
     padding-bottom: 40px;
+}
+
+////////// 768px/////////////////// 
+
+@media screen and (min-width: 768px) {
+    .cases__first-text {
+        margin-top: 48px;
+        font-size: 18px;
+        
+    }
+    .cases__big-text {
+        margin-top: 16px;
+        font-size: 40px;
+    }
+    .cases__third-text {
+        margin-left: 63px;
+        font-size: 18px;
+    }
+    .cases__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 32px;;
+    }
+    .mobile__case {
+        width: 223px;
+    }
+    .case__item {
+        padding-left: 18px;
+        
+    }
 }
