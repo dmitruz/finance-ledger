@@ -66,3 +66,36 @@ font-size: 16px;
 line-height: 0,8;
 color: #FFFFFF;
 }
+
+///////   768px   ///////////////////////////////////////
+
+@media screen and (min-width: 768px) { 
+.blogpost__img {
+    width: 368px;
+    height: 493px;;
+    object-fit: cover;
+    float: right;
+}
+.blogpost__block {
+    height: 493px;
+    padding-left: 32px;
+    align-items: center;
+}
+.blog__post-date {
+    font-size: 18px;
+}
+.blog__post-header {
+    font-size: 40px;
+    width: 263px;
+}
+.blog__post-paragraph {
+    font-size: 18px;
+    width: 336px;
+}
+.blog__post-btn {
+    width: 186px;
+}
+.blog__post-btn-text {
+    font-size: 18px;
+}
+}
