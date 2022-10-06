@@ -70,3 +70,38 @@ line-height: 0,8;
 text-align: center;
 color: #FFFFFF;
 }
+
+//////////  768 px ///////////////////////  
+
+
+@media screen and (min-width: 768px) {
+    .request__wrapper {
+        display: flex;
+    }
+   .last__team-member {
+    width: 368px;
+    height: 354px;
+    float: left;
+    object-fit: cover;
+   } 
+  .request__form-block {
+    width: 100%;
+    padding-top: 32px;
+    padding-left: 32px;
+    height: 354px;
+  }
+.request__callback {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 40px;
+    width: 317px;
+}
+  .input {
+    width: 336px;
+    font-size: 18px;
+  }
+  .request__form-btn {
+    margin-top: 24px;
+    font-size: 18px;
+  }
+}

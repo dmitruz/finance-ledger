@@ -33,3 +33,23 @@ color: #FFFFFF;
 margin-left: 34px;
 margin-top: 12px;
 }
+
+//////  768 px  ///////////////  
+ 
+@media  screen and (min-width: 768px) {
+    .footer__block {
+        width: 768px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .footer__list {
+        margin-left: 276px;
+        margin-top: 20px;
+    }
+    .footer__text {
+        margin-left: 270px;
+        font-size: 18px;
+        width: 287px;
+    }
+}
