@@ -173,7 +173,56 @@ color: #FFFFFF;
     font-size: 40px;
 }
 }
+//// 1360 px ///////////////////////////////////////  
 
+@media screen and (min-width: 1360px) { 
+.header {
+    width: 1360px;
+}
+.container {
+    width: 1360px;
+}
+.navigation {
+    display: flex;
+    margin-left: 28px;
+    padding-top: 32px;
+}
+    .header__text-green {
+    font-size:  35px;
+    margin-left: 10px;
+}
+.header__list {
+    
+    margin-left: 549px;
+}
+.header__list-text {
+    margin-left: 20px;
+}
+.header__text {
+    font-size: 35px;
+    margin-left: 8px;
+    
+}
+.header__list-text {
+    font-size: 18px;
+}
+.hero__text {
+    font-size: 56px;
+    width: 523px;
+    margin-left: 418px;
+    margin-top: 272px;
+}
+.hero__second-text {
+    font-size: 40px;
+    width: 798px;
+    margin-top: 16px;
+    margin-left: 280px;
+}
+.hero__btn {
+    margin-top: 24px;
+    margin-bottom: 270px;
+}
+}
 
 //   <!---HEADER-->
 //     <section class="header">

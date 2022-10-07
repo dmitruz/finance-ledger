@@ -3,6 +3,7 @@
 .green__section {
     background-color: #28A745;
     margin-top: 0;
+    width: 320px;
 }
 
 .image-inline {
@@ -70,7 +71,11 @@ color: #FFFFFF;
 
 
 @media screen and (min-width: 768px) { 
-.green__wrapper {
+
+    .green__section {
+        width: 768px;
+    }
+    .green__wrapper {
     display: flex;
 }
 .image-inline {
@@ -83,5 +88,29 @@ color: #FFFFFF;
 .green__block {
     margin-left: 32px;
     margin-top: 62px;;
+}
+}
+
+///////   1360 px  ////////////////////////////////  
+
+
+@media screen and (min-width: 1360px) { 
+.green__section {
+    width: 1360px;
+}
+    .green__wrapper {
+    display: flex;
+}
+.image-inline {
+    display: block;
+    
+    width: 670px;
+    height: 485px;
+    object-fit: cover;
+}
+.green__block {
+    margin-left: 32px;
+    margin-top: 62px;
+    
 }
 }

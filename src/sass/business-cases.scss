@@ -1,6 +1,7 @@
 
 .business__cases {
     background-color: #b3b3b3;
+    width: 320px;
 }
 
 
@@ -42,7 +43,7 @@ margin-top: 24px;
 }
 
 .mobile__case {
-    max-width: 320px;
+    width: 320px;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 30px;
@@ -50,7 +51,7 @@ margin-top: 24px;
 }
 
 .mobile__case-else {
-    max-width: 320px;
+    width: 320px;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 8px;
@@ -64,8 +65,11 @@ margin-top: 24px;
 ////////// 768px/////////////////// 
 
 @media screen and (min-width: 768px) {
+    .business__cases {
+        width: 768px;
+    }
     .cases__first-text {
-        margin-top: 48px;
+        padding-top: 48px;
         font-size: 18px;
         
     }
@@ -84,6 +88,41 @@ margin-top: 24px;
     }
     .mobile__case {
         width: 223px;
+    }
+    .case__item {
+        padding-left: 18px;
+        
+    }
+}
+
+/////  1360 px  ///////////////////////////////////////////////  
+
+
+@media screen and (min-width: 1360px) {
+    .business__cases {
+        width: 1360px;
+    }
+    .cases__first-text {
+        padding-top: 80px;
+        font-size: 18px;
+        
+    }
+    .cases__big-text {
+        margin-top: 16px;
+        font-size: 40px;
+    }
+    .cases__third-text {
+        margin-left: 63px;
+        font-size: 18px;
+    }
+    .cases__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 32px;;
+    }
+    .mobile__case {
+        width: 426px;
+        
     }
     .case__item {
         padding-left: 18px;

@@ -1,4 +1,6 @@
-
+.request__section {
+  width: 320px;
+}
 .request__block {
     background-color: #f4f4f4;
     padding-left: 20px;
@@ -75,6 +77,9 @@ color: #FFFFFF;
 
 
 @media screen and (min-width: 768px) {
+  .request__section {
+  width: 768px;
+}
     .request__wrapper {
         display: flex;
     }
@@ -103,5 +108,43 @@ color: #FFFFFF;
   .request__form-btn {
     margin-top: 24px;
     font-size: 18px;
+  }
+}
+
+///////   1360 px  ////////////////////  
+
+@media screen and (min-width: 1360px) {
+  .request__section {
+  width: 1360px;
+}
+  .request__wrapper {
+        display: flex;
+    }
+   .last__team-member {
+    width: 670px;
+    height: 454px;
+    float: left;
+    object-fit: cover;
+   } 
+  .request__form-block {
+    width: 100%;
+    padding-top: 32px;
+    padding-left: 32px;
+    height: 454px;
+  }
+.request__callback {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 40px;
+    width: 317px;
+}
+  .input {
+    width: 642px;
+    font-size: 18px;
+  }
+  .request__form-btn {
+    margin-top: 80px;
+    font-size: 18px;
+   
   }
 }

@@ -1,3 +1,6 @@
+.footer {
+    width: 320px;
+}
 .footer__block {
 width: 320px;
 height: 109px;
@@ -37,6 +40,9 @@ margin-top: 12px;
 //////  768 px  ///////////////  
  
 @media  screen and (min-width: 768px) {
+    .footer {
+    width: 768px;
+}
     .footer__block {
         width: 768px;
         align-items: center;
@@ -49,6 +55,30 @@ margin-top: 12px;
     }
     .footer__text {
         margin-left: 270px;
+        font-size: 18px;
+        width: 287px;
+    }
+}
+
+////////   1360 px  ///////////////////
+
+@media  screen and (min-width: 1360px) {
+ .footer {
+    width: 1360px;
+}
+    .footer__block {
+        width: 1360px;
+        align-items: center;
+        justify-content: center;
+      
+        
+    }
+    .footer__list {
+        margin-left: 572px;
+        
+    }
+    .footer__text {
+        margin-left: 537px;
         font-size: 18px;
         width: 287px;
     }
