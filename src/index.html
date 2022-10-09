@@ -267,17 +267,20 @@
         
         <div class="request__form-block">
           <h2 class="request__callback">Request Callback</h2>
-          <form class="request-form" action="/" method="GET">
+          
+          <form class="request-form" id="form" action="/" method="POST">
 
             <div>
               <label  for="name"></label>
-              <input class="input" id="name" name="name" placeholder="Enter Your Name" type="text" />
+              <input class="input" id="name" name="name" placeholder="Enter Your Name" type="text" required />
+              <div class="error"></div>
             </div>
             <div>
               <label for="email"></label>
-              <input class="input" id="email" name="email" placeholder="Enter Email" type="email" />
+              <input class="input" id="email" name="email" placeholder="Enter Email" type="email" required />
+              <div class="error"></div>
             </div>
-              <button class="request__form-btn" type="button">Send</button>
+              <button  class="request__form-btn" id="button" type="button">Send</button>
             </div>
           </form>
         </div>
@@ -309,6 +312,9 @@
             </div>
         </div>
     </section>
-    <script src="./index.js"></script>
+   <script defer src="./index.js"></script>
+
+      
+    
   </body>
 </html>
