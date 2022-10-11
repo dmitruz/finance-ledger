@@ -40,6 +40,7 @@ line-height: 0,8;
 text-align: center;
 color: #333333;
 padding-top: 24px;
+padding-bottom: 20px;
 }
 
 .team__members-block {
@@ -111,9 +112,10 @@ padding-bottom: 50px;
 }
 .professional__team-list {
     display: flex;
+    
 }
 .professional__list-item {
-    margin-left: 18px;
+    margin-left: 14px;
 }
 .img__name {
     font-size: 32px;
@@ -160,9 +162,10 @@ padding-bottom: 50px;
 }
 .professional__team-list {
     display: flex;
+    
 }
 .professional__list-item {
-   margin-left: 28px;
+   margin-left: 24px;
 }
 .professional__list-item:not(:last) {
    padding-left: 20px;

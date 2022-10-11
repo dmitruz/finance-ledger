@@ -1,58 +1,40 @@
-const forms = () => {
-    const form = document.querySelectorAll('form'),
-          inputs = document.querySelectorAll('input');
-         
 
- 
-    const message = {
-        loading: 'Загрузка...',
-        success: 'Спасибо! Скоро мы с вами свяжемся',
-        failure: 'Что-то пошло не так...'
-    };
+import throttle from "lodash.throttle";
 
-    const postData = async (url, data) => {
-        document.querySelector('.status').textContent = message.loading;
-        let res = await fetch(url, {
-            method: "POST",
-            body: data
-        });
+const REQUEST_FORM_STATE = 'request-form-state';
+const form = document.querySelector('.request-form');
+const data = { email: '', name: ''};
+setValuesElemForm();
 
-        return await res.text();
-    };
+form.addEventListener('input', evt => {
+  data[evt.target.name] = evt.target.value;
+  localStorage.setItem(REQUEST_FORM_STATE, JSON.stringify({...data, [evt.target.name]: evt.target.value }),
+);
+});
 
-    const clearInputs = () => {
-        inputs.forEach(item => {
-            item.value = '';
-        });
-    };
+form.addEventListener('input', evt => {
+  data[evt.target.email] = evt.target.value;
+  localStorage.setItem(REQUEST_FORM_STATE, JSON.stringify({...data, [evt.target.email]: evt.target.value }),
+);
+});
 
-    form.forEach(item => {
-        item.addEventListener('submit', (e) => {
-            e.preventDefault();
+form.addEventListener('submit', evt => {
+  evt.preventDefault()
+  evt.currentTarget.reset();
+  localStorage.removeItem(REQUEST_FORM_STATE);
+});
 
-            let statusMessage = document.createElement('div');
-            statusMessage.classList.add('status');
-            item.appendChild(statusMessage);
+function setValuesElemForm() {
+  const dataFromLs = JSON.parse(localStorage.getItem(REQUEST_FORM_STATE));
+  if (dataFromLs) {
+    data.email = dataFromLs.email;
+    data.name = dataFromLs.name;
+    form.elements.email.value = data.email;
+    form.elements.name.value = data.name;
+  } 
+}
 
-            const formData = new FormData(item);
 
-            postData('http://localhost:1234')
-                .then(res => {
-                    console.log(res);
-                    statusMessage.textContent = message.success;
-                })
-                .catch(() => statusMessage.textContent = message.failure)
-                .finally(() => {
-                    clearInputs();
-                    setTimeout(() => {
-                        statusMessage.remove();
-                    }, 5000);
-                });
-        });
-    });
-};
-
-export default forms;
 // const form = document.querySelector("request-form");
 // const name = document.querySelector("input.name");
 // const email = document.querySelector("input.email");
