@@ -59,6 +59,30 @@ padding-bottom: 20px;
     border-radius: 0px 0px 4px 4px;
 }
 
+
+
+
+.professional__team-wrapper {
+    position: relative;
+    
+}
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    overflow: auto;
+}
+
+.overlay__list {
+    display: flex;
+    
+  
+}
+
+.overlay__list-item {
+    padding-left: 20px;
+}
 .img__name {
  
 font-family: 'Open Sans';
