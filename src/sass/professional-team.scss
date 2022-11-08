@@ -53,10 +53,13 @@ padding-bottom: 20px;
 .professional__team-list {
     align-items: center;
 }
+
+
 .team__members-img {
     width: 280px;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 12%);
     border-radius: 0px 0px 4px 4px;
+    position: relative;
 }
 
 
@@ -64,15 +67,18 @@ padding-bottom: 20px;
 
 .professional__team-wrapper {
     position: relative;
+    overflow: hidden;
+    
+    text-align: center;
+    background: blue;
+    border-radius: 10px;
+     cursor: pointer;
     
 }
-.overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: blue;
-    overflow: auto;
-}
+
+
+
+
 
 .overlay__list {
     display: flex;
@@ -138,6 +144,7 @@ padding-bottom: 50px;
 }
 .professional__team-list {
     display: flex;
+    flex-wrap: wrap;
     
 }
 .professional__list-item {
