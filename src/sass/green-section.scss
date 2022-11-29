@@ -75,6 +75,9 @@ color: #FFFFFF;
     .green__section {
         width: 768px;
     }
+    .container {
+        width: 768px;
+    }
     .green__wrapper {
     display: flex;
 }
@@ -96,6 +99,9 @@ color: #FFFFFF;
 
 @media screen and (min-width: 1360px) { 
 .green__section {
+    width: 1360px;
+}
+.container {
     width: 1360px;
 }
     .green__wrapper {

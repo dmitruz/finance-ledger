@@ -25,14 +25,22 @@
           <h2 class="header__text-green">Finance</h2>
           <h2 class="header__text">Ledger</h2>
           </nav>
-          <ul class="header__list">
+          <ul onclick="addLink(event)" id='navlist' class="header__list">
            <li class="header__item">
-            
-             <h3 class="header__list-text">Home</h3>
-
-             <h3 class="header__list-text">Cases</h3>
-             <h3 class="header__list-text">Blog</h3>
-             <h3 class="header__list-text">Contact</h3>
+              <h3 class="header__list-text">
+                <a class="header__list-link active" href="#">Home</h3></a>
+            </li>
+            <li class="header__item">
+             <h3 class="header__list-text">
+                <a class="header__list-link active" href="#cases">Cases</h3></a>
+            </li>
+            <li class="header__item">
+             <h3 class="header__list-text">
+                <a class="header__list-link active" href="#blog">Blog</h3></a>
+            </li>
+            <li class="header__item">
+             <h3 class="header__list-text">
+                <a class="header__list-link active" href="contact">Contact</h3></a>
            </li>
         </ul>
         </div>
@@ -43,9 +51,11 @@
         </h1>
         <h2 class="hero__second-text">We provide world class financial assistance</h2>
         
-        <button class="hero__btn">
+        <button class="hero__btn"> 
+        <a href="#readMore">
           <img class="next" src="./images/next.png" />
           <p class="btn__text">Read More</p>
+          </a>
         </button>
       </div>
     </section>
@@ -80,7 +90,9 @@
             itaque rerum temporibus doloribus iste maiores deleniti
           </p>
           <button class="green__section-btn">
+            <a href="#readMore">
             <h3 class="section__btn-text">Read More</h3>
+            </a>
           </button>
         </div>
         </div>
@@ -89,7 +101,7 @@
 
     <!-----BUSINESS   CASES  SECTION --------------------------------------------------------------------------------->
 
-    <section class="business__cases">
+    <section class="business__cases" id="cases">
       <div class="container">
         <h2 class="cases__first-text">This is what we do</h2>
         <h2 class="cases__big-text">
@@ -177,7 +189,7 @@
 
     <!---BLOGPOST  SECTION ---------------------------------------------------------------------------------------->
 
-    <section class="blogpost">
+    <section class="blogpost" id="blog">
       <div class="container">
         <picture>
           <source srcset="images/home/blog.jpg" />
@@ -188,7 +200,7 @@
         </picture>
 
         <div class="blogpost__block">
-          <h2 class="blog__post-date">April 16 2020</h2>
+          <h2 id="date" class="blog__post-date">April 16 2020</h2>
           <h3 class="blog__post-header">Blog Post One</h3>
           <p class="blog__post-paragraph">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
@@ -196,7 +208,10 @@
             itaque rerum temporibus doloribus iste maiores deleniti?
           </p>
           <button class="blog__post-btn">
+            <a href="https://www.sageintacct.com/resources/accounting-financials-glossary/accounting-ledger" target="blank">
             <h3 class="blog__post-btn-text">Read Our Blog</h3>
+            </a>
+            
           </button>
         </div>
       </div>
@@ -204,7 +219,7 @@
 
     <!---PROFESSIONAL   TEAM----------------------------------------------------------------------------------->
 
-    <section class="professional__team">
+    <section class="professional__team" id="readMore">
       <div class="container">
         <div class="professional__block">
           <h2 class="about__us">Who we are</h2>
@@ -229,22 +244,22 @@
               <div class="overlay">
                 <ul class="team__icons-list">
                   <li class="team__icon-item">
-                    <a href="#" class="icon-link">
+                    <a href="http://www.facebook.com" target="blank" class="icon-link">
                     <img class="svg"   src="./images/svg/iconc.svg" widht="35" height="35" > 
                    </a>
                   </li>
                    <li class="team__icon-item">
-                    <a href="http://www.facebook.com" target="blank" class="icon-link">
+                    <a href="http://www.twitter.com" target="blank" class="icon-link">
                     <img class="svg" src="./images/svg/iconb.svg" widht="35" height="35">
                     </a>
                   </li>
                   <li class="team__icon-item">
-                    <a href="#" class="icon-link">
+                    <a href="http://www.youtube.com" target="blank" class="icon-link">
                     <img class="svg" src="./images/svg/youtube.svg" widht="35" height="35">
                     </a>
                   </li>
                   <li class="team__icon-item">
-                     <a href="#" class="icon-link">
+                     <a href="http://www.linkedin.com" target="blank" class="icon-link">
                     <img class="svg" src="./images/svg/icona.svg" widht="35" height="35">
                      </a>
                   </li>
@@ -272,22 +287,22 @@
                 <div class="overlay">
                 <ul class="team__icons-list">
                   <li class="team__icon-item">
-                    <a href="#" class="icon-link">
+                    <a href= "http://www.facebook.com" target="blank" class="icon-link">
                     <img class="svg"   src="./images/svg/iconc.svg" widht="35" height="35" > 
                    </a>
                   </li>
                    <li class="team__icon-item">
-                    <a href="#" class="icon-link">
+                    <a href="http://www.twitter.com" target="blank" class="icon-link">
                     <img class="svg" src="./images/svg/iconb.svg" widht="35" height="35">
                     </a>
                   </li>
                   <li class="team__icon-item">
-                    <a href="#" class="icon-link">
+                    <a href= "http://www.youtube.com" target="blank" class="icon-link">
                     <img class="svg" src="./images/svg/youtube.svg" widht="35" height="35">
                     </a>
                   </li>
                   <li class="team__icon-item">
-                     <a href="#" class="icon-link">
+                     <a href= "http://www.linkedin.com" target="blank" class="icon-link">
                     <img class="svg" src="./images/svg/icona.svg" widht="35" height="35">
                      </a>
                   </li>
@@ -313,22 +328,22 @@
                   <div class="overlay">
                 <ul class="team__icons-list">
                   <li class="team__icon-item">
-                    <a href="#" class="icon-link">
+                    <a href="http://www.facebook.com" target="blank" class="icon-link">
                     <img class="svg"   src="./images/svg/iconc.svg" widht="35" height="35" > 
                    </a>
                   </li>
                    <li class="team__icon-item">
-                    <a href="#" class="icon-link">
+                    <a href="http://www.twitter.com" target="blank" class="icon-link">
                     <img class="svg" src="./images/svg/iconb.svg" widht="35" height="35">
                     </a>
                   </li>
                   <li class="team__icon-item">
-                    <a href="#" class="icon-link">
+                    <a href="http://www.youtube.com" target="blank" class="icon-link">
                     <img class="svg" src="./images/svg/youtube.svg" widht="35" height="35">
                     </a>
                   </li>
                   <li class="team__icon-item">
-                     <a href="#" class="icon-link">
+                     <a href="http://www.linkedin.com" target="blank" class="icon-link">
                     <img class="svg" src="./images/svg/icona.svg" widht="35" height="35">
                      </a>
                   </li>
@@ -349,7 +364,7 @@
 
     <!---REQUEST   FORM ------------------------------------------------------------------------------------------------------------->
 
-    <section class="request__section">
+    <section class="request__section" id="contact">
       <div class="container">
         <div class="request__wrapper">
         <div class="last__member">
@@ -376,7 +391,7 @@
             </div>
             <div>
               <label for="email"></label>
-              <input class="input" name="email" placeholder="Enter Email" type="email" autofocus required />
+              <input class="input" id="email" name="user_email" placeholder="Enter Email" type="email" autofocus required />
               
             </div>
               <button  class="request__form-btn"  type="submit">Send</button>
@@ -389,25 +404,33 @@
 
 <!-----FOOTER------------------------------------------------------------------------------------------------------->
 
-    <section class="footer">
+     <section class="footer">
         <div class="container">
             <div class="footer__block">
               <ul class="footer__list">
                   <li class="footer__list-item">
+                    <a href="https://www.facebook.com" target="blank">
                     <img class="svg" src="./images/svg/iconc.svg" widht="35" height="35">
+                    </a>
                   </li>
                    <li class="footer__list-item">
+                    <a href="https://www.twitter.com" target="blank">
                     <img class="svg" src="./images/svg/iconb.svg" widht="35" height="35">
+                    </a>
                   </li>
                   <li class="footer__list-item">
+                    <a href="https://www.youtube.com" target="blank">
                     <img class="svg" src="./images/svg/youtube.svg" widht="35" height="35">
+                    </a>
                   </li>
                   <li class="footer__list-item">
+                    <a href="https://www.linkedin.com" target="blank">
                     <img class="svg" src="./images/svg/icona.svg" widht="35" height="35">
+                    </a>
                   </li>
 
               </ul>
-            <h3 class="footer__text">Copyright © 2022 - FinanceLedger</h3>
+            <h3 class="footer__text">Copyright © 2022 - Finance Ledger</h3>
             </div>
         </div>
     </section>

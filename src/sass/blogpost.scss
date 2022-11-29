@@ -76,6 +76,9 @@ color: #FFFFFF;
 .blogpost {
     width: 768px;
 }
+.container {
+    width: 768px;
+}
     .blogpost__img {
     width: 368px;
     height: 493px;
@@ -110,6 +113,9 @@ color: #FFFFFF;
 
 @media screen and (min-width: 1360px) { 
     .blogpost {
+    width: 1360px;
+}
+.container {
     width: 1360px;
 }
 .blogpost__img {
