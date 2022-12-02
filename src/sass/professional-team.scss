@@ -1,9 +1,10 @@
 .professional__team {
     width: 320px;
+    margin: 0 auto;
 }
 .professional__block {
     background-color: #b3b3b3;
-    align-items: center;
+    //align-items: center;
 }
 .about__us {
 font-family: 'Open Sans';
@@ -180,6 +181,7 @@ padding-bottom: 50px;
     display: flex;
     
     
+    
 }
 .professional__list-item {
     margin-left: 14px;
@@ -237,6 +239,7 @@ padding-bottom: 50px;
 }
 .professional__team-list {
     display: flex;
+  
     
 }
 .professional__list-item {
